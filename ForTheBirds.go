@@ -17,12 +17,12 @@ func snob(w http.ResponseWriter, _ *http.Request) {
 }
 
 func neurotic(w http.ResponseWriter, _ *http.Request) {
-    w.WriteHeader(http.)
+    //w.WriteHeader()
     fmt.Fprintf(w, "<html>Sorry, I can't do that... for legal reasons.<br> - Neurotic<htlm>\n")
 }
 
 func main() {
-    http.HandleFunc("/root", root)
+    http.HandleFunc("/", root)
     http.HandleFunc("/snob", snob)
     http.HandleFunc("/neurotic", neurotic)
     log.Fatal( http.ListenAndServe(":8080", nil) )    
