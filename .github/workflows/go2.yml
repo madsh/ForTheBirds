@@ -65,7 +65,8 @@ jobs:
     - name: Deploy to Docker registry
       uses: docker/build-push-action@v1
       with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: wilsontanwm/gosimple
+        registry: reg.govcloud.dk 
+        username: ${{ robot$pub }}
+        password: ${{ eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTg5OTc2MDAsImlhdCI6MTU5ODk3NDM5NiwiaXNzIjoiaGFyYm9yLXRva2VuLWRlZmF1bHRJc3N1ZXIiLCJpZCI6MTQ4NDE4LCJwaWQiOjM3LCJhY2Nlc3MiOlt7IlJlc291cmNlIjoiL3Byb2plY3QvMzcvcmVwb3NpdG9yeSIsIkFjdGlvbiI6InB1c2giLCJFZmZlY3QiOiIifV19.tMooIQxxmc-J79W8hEeq8VvIYDyFRDI6_tjxQsiBPVJ4F0C_bnK-PWptqtlUY1pWAqufL6sHbCZKMvN0PWSxF_aOB-Iow18Zl9IEHH7podLEDAXlplPnERsaHrnt3IalkIWdn52-Xthlg0Ds4h2DT2MgeCSekv2ncDtYAqcN6nbv-ezQXxc1E4UG-Gll0uMJKuxsEXeQ0gEZtIrC86owdtT25SYjse56oWOtf3PE8iKkhBon2ARi97Pt_hFpm99t2zuq7UWDA3UzBpVj6jUUkbozsSMvM5pmy-TW5YheTnrjDci8pwsC-aovXzVKvhUN4v9Onju4nD5gnn0G7tY8dN7-0rrz2TEn6AaK2X_josIGo6LzMoDGHHxT_eVJthkVfaL8fwJbO-asEXwQuCQ6q5peX_pflIoRGqiktsEPPx2ahi0aRKElgugVZaL-628A00E8ltW9pwLpm6lw8ih0jIlnRypgGXhZ81Nh5RdHm20ZXHrS_g3WhemQj4VRKvzd6vNh-SHWW8dI5uz_QmlRauwwpWvbnHSXS4h5nEEGyKQ5GAIrlHrSVJLj_tu9HFSoVtm2zeW5gTUX9C3e4buStv5rHpmOshaUGlF7HCiBAJN6mLdk24s9p3HNGkEN7IGQMI8Bs5MGOREi4t22ZojJYNzYUAv78aKt-KuNUIPJVc8 }}
+        repository: cu3802-uim/forthebirds
         tag_with_ref: true
