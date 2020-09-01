@@ -1,5 +1,4 @@
-FROM scratch
-# Copy our static executable.
-COPY --from=builder /go/bin/hello /go/bin/hello
-# Run the hello binary.
-ENTRYPOINT ["/go/bin/hello"]
+COPY entrypoint.sh /entrypoint.sh
+
+# Executes `entrypoint.sh` when the Docker container starts up 
+ENTRYPOINT ["/entrypoint.sh"]
